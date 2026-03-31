@@ -53,39 +53,32 @@ export default function VideoCard({ video, onClick, index }: VideoCardProps) {
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
-      className="group cursor-pointer"
+      transition={{ duration: 0.5, delay: index * 0.06, ease: [0.4, 0, 0.2, 1] }}
+      className="group cursor-pointer border border-stone-800 rounded-sm overflow-hidden hover:border-stone-600 transition-all duration-300 hover:shadow-xl hover:shadow-black/50"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={() => onClick(video)}
     >
-      {/* Thumbnail container */}
-      <div className="relative overflow-hidden bg-surface aspect-video">
-        {/* Static thumbnail */}
+      {/* Thumbnail */}
+      <div className="relative aspect-video bg-stone-900 overflow-hidden">
         {thumbnail && (
           <Image
             src={thumbnail}
             alt={video.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className={`object-cover transition-all duration-700 ease-cinematic ${
-              hovered ? "scale-105 opacity-30" : "scale-100 opacity-100"
+            className={`object-cover transition-all duration-500 ${
+              hovered ? "scale-105 opacity-40" : "scale-100 opacity-100"
             }`}
           />
         )}
-        {!thumbnail && (
-          <div className="absolute inset-0 bg-surface-2" />
-        )}
+        {!thumbnail && <div className="absolute inset-0 bg-stone-900" />}
 
-        {/* Muted preview player on hover */}
+        {/* Muted hover preview */}
         {hovered && (
-          <div
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              playerReady ? "opacity-80" : "opacity-0"
-            }`}
-          >
+          <div className={`absolute inset-0 transition-opacity duration-500 ${playerReady ? "opacity-90" : "opacity-0"}`}>
             <ReactPlayer
               url={previewUrl}
               width="100%"
@@ -96,58 +89,41 @@ export default function VideoCard({ video, onClick, index }: VideoCardProps) {
               playsinline
               onReady={() => setPlayerReady(true)}
               config={{
-                youtube: {
-                  playerVars: { rel: 0, modestbranding: 1, controls: 0 },
-                },
+                youtube: { playerVars: { rel: 0, modestbranding: 1, controls: 0 } },
               }}
             />
           </div>
         )}
 
-        {/* Play icon */}
-        <div
-          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
-            hovered ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="w-14 h-14 rounded-full border border-foreground/40 flex items-center justify-center backdrop-blur-sm">
-            <svg
-              className="w-5 h-5 text-foreground ml-1"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
+        {/* Play button */}
+        <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"}`}>
+          <div className="w-12 h-12 rounded-full border border-white/50 flex items-center justify-center backdrop-blur-sm bg-black/20">
+            <svg className="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
           </div>
         </div>
 
-        {/* Tags */}
-        <div className="absolute bottom-3 left-3 flex gap-1.5">
-          {video.tags.slice(0, 2).map((tag) => (
-            <span
-              key={tag}
-              className="font-sans text-[10px] tracking-widest uppercase px-2 py-0.5 bg-black/60 backdrop-blur-sm text-foreground/70 border border-white/10"
-            >
-              {tag}
-            </span>
-          ))}
+        {/* Category tag */}
+        <div className="absolute top-3 left-3">
+          <span className="text-[10px] font-medium tracking-widest uppercase px-2 py-1 bg-black/70 backdrop-blur-sm text-stone-300 border border-stone-700/50 rounded-sm">
+            {video.tags[0]}
+          </span>
         </div>
       </div>
 
-      {/* Card footer */}
-      <div className="mt-3 flex items-baseline justify-between">
-        <motion.h3
-          className="font-display text-lg text-foreground group-hover:text-accent transition-colors duration-300"
-        >
-          {video.title}
-        </motion.h3>
-        <span className="font-sans text-xs text-muted ml-4 shrink-0">
-          {video.year}
-        </span>
+      {/* Card info */}
+      <div className="p-4 bg-stone-950">
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="text-sm font-semibold tracking-tight text-foreground group-hover:text-accent transition-colors duration-300">
+            {video.title}
+          </h3>
+          <span className="text-xs text-stone-500 shrink-0 mt-0.5">{video.year}</span>
+        </div>
+        {video.client && (
+          <p className="text-xs text-stone-500 mt-1">{video.client}</p>
+        )}
       </div>
-      {video.client && (
-        <p className="font-sans text-xs text-muted mt-0.5">{video.client}</p>
-      )}
     </motion.article>
   );
 }

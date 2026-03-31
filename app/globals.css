@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-cormorant: "Cormorant Garamond", Georgia, serif;
-  --font-dm-sans: "DM Sans", system-ui, sans-serif;
+  --font-inter-tight: "Inter Tight", system-ui, sans-serif;
 }
 
 * {
@@ -13,30 +12,30 @@
   margin: 0;
 }
 
-html,
-body {
-  background-color: #080808;
-  color: #f0ece4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 ::selection {
-  background-color: #c9a96e33;
-  color: #f0ece4;
+  background-color: #05df7233;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #080808;
+  background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2a2a2a;
+  background: #292524;
   border-radius: 2px;
 }

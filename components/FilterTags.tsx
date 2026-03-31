@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 interface FilterTagsProps {
   tags: string[];
   selected: string[];
@@ -23,10 +21,10 @@ export default function FilterTags({ tags, selected, onChange }: FilterTagsProps
     <div className="flex flex-wrap gap-2">
       <button
         onClick={() => onChange([])}
-        className={`font-sans text-[11px] tracking-widest uppercase px-4 py-1.5 border transition-all duration-300 ${
+        className={`text-xs font-medium tracking-widest uppercase px-5 py-2 border rounded-sm transition-all duration-300 hover:scale-105 ${
           isAll
-            ? "border-accent text-accent"
-            : "border-white/10 text-muted hover:border-white/30 hover:text-foreground"
+            ? "border-white text-white"
+            : "border-stone-800 text-stone-400 hover:border-stone-500 hover:text-white"
         }`}
       >
         All
@@ -34,18 +32,17 @@ export default function FilterTags({ tags, selected, onChange }: FilterTagsProps
       {tags.map((tag) => {
         const active = selected.includes(tag);
         return (
-          <motion.button
+          <button
             key={tag}
             onClick={() => toggle(tag)}
-            whileTap={{ scale: 0.96 }}
-            className={`font-sans text-[11px] tracking-widest uppercase px-4 py-1.5 border transition-all duration-300 ${
+            className={`text-xs font-medium tracking-widest uppercase px-5 py-2 border rounded-sm transition-all duration-300 hover:scale-105 ${
               active
-                ? "border-accent text-accent"
-                : "border-white/10 text-muted hover:border-white/30 hover:text-foreground"
+                ? "border-white text-white"
+                : "border-stone-800 text-stone-400 hover:border-stone-500 hover:text-white"
             }`}
           >
             {tag}
-          </motion.button>
+          </button>
         );
       })}
     </div>
