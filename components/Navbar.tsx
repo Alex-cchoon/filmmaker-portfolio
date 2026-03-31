@@ -18,7 +18,7 @@ export default function Navbar() {
         href="/"
         className="font-display text-sm tracking-widest uppercase text-foreground hover:text-accent transition-colors duration-300"
       >
-        Your Name
+        Ong Chee Choon
       </Link>
 
       <nav className="flex items-center gap-10">

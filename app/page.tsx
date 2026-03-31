@@ -42,7 +42,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-[clamp(3.5rem,10vw,9rem)] font-light leading-none tracking-tight text-foreground"
           >
-            Your Name
+            Ong Chee Choon
           </motion.h1>
 
           <motion.p

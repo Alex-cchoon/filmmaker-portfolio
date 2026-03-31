@@ -58,13 +58,13 @@ export default function HirePage() {
         className="flex flex-col sm:flex-row items-start sm:items-center gap-6"
       >
         <a
-          href="mailto:your@email.com"
+          href="mailto:work.cheechoon@gmail.com"
           className="font-sans text-xs tracking-widest uppercase text-foreground border border-white/20 px-10 py-4 hover:border-accent hover:text-accent transition-all duration-300"
         >
           Email Me
         </a>
         <p className="font-sans text-xs text-muted">
-          your@email.com
+          work.cheechoon@gmail.com
         </p>
       </motion.div>
     </main>

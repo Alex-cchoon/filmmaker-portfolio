@@ -39,7 +39,7 @@ export default function AboutPage() {
           {/* Uncomment once you add the photo:
           <Image
             src="/images/profile.jpg"
-            alt="Your Name"
+            alt="Ong Chee Choon"
             fill
             className="object-cover"
             priority
@@ -64,7 +64,7 @@ export default function AboutPage() {
           </motion.p>
 
           <h1 className="font-display text-4xl md:text-5xl font-light text-foreground mb-8 leading-tight">
-            Your Name
+            Ong Chee Choon
           </h1>
 
           <div className="space-y-4 font-sans text-sm text-muted leading-relaxed">

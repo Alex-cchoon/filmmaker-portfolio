@@ -18,11 +18,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Filmmaker",
+  title: "Ong Chee Choon — Filmmaker",
   description:
     "Freelance filmmaker and cinematographer. Commercial, wedding, documentary and narrative work.",
   openGraph: {
-    title: "Your Name — Filmmaker",
+    title: "Ong Chee Choon — Filmmaker",
     description: "Freelance filmmaker and cinematographer.",
     type: "website",
   },
