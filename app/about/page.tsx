@@ -14,9 +14,7 @@ const gear = [
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Vimeo", href: "https://vimeo.com" },
-  { label: "YouTube", href: "https://youtube.com" },
+  { label: "Instagram", href: "https://www.instagram.com/stonesoup.cc/" },
 ];
 
 export default function AboutPage() {
@@ -69,19 +67,19 @@ export default function AboutPage() {
 
           <div className="space-y-4 font-sans text-sm text-muted leading-relaxed">
             <p>
-              I&apos;m a freelance filmmaker and cinematographer based in [Your City].
-              I create visual stories for brands, couples, artists, and independent
-              productions — bringing the same level of craft and intention to
-              every frame.
+              I&apos;m a Singapore-based film director with a fresh, exciting visual
+              sensibility and a strong storytelling instinct. I specialise in
+              performance-driven narratives and mixed-media work that blends live
+              action with animation or VFX.
             </p>
             <p>
-              With a background in [your background], I approach each project
-              with a documentary sensibility and an eye for the in-between moments
-              that make a film feel alive.
+              My work is grounded in human stories and authentic moments — often
+              focusing on the craft, relationships, and journeys behind the brand.
             </p>
             <p>
-              Whether it&apos;s a brand manifesto, a wedding film, or a short
-              documentary — I&apos;m interested in work that leaves something behind.
+              With a background in communications, I approach filmmaking with the
+              audience in mind, crafting stories that resonate emotionally and leave
+              viewers feeling inspired, moved, or deeply connected to the narrative.
             </p>
           </div>
 

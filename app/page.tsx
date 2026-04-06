@@ -209,11 +209,9 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex gap-6">
-              {["Instagram", "Vimeo", "YouTube"].map((s) => (
-                <a key={s} href="#" className="text-xs tracking-widest uppercase text-stone-500 hover:text-accent transition-colors duration-300">
-                  {s}
-                </a>
-              ))}
+              <a href="https://www.instagram.com/stonesoup.cc/" target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase text-stone-500 hover:text-accent transition-colors duration-300">
+                Instagram
+              </a>
             </div>
           </motion.div>
         </div>
@@ -304,11 +302,9 @@ export default function Home() {
           © 2025 Ong Chee Choon. All rights reserved.
         </p>
         <div className="flex gap-6">
-          {["Instagram", "Vimeo", "YouTube"].map((s) => (
-            <a key={s} href="#" className="text-xs tracking-widest uppercase text-stone-600 hover:text-accent transition-colors duration-300">
-              {s}
-            </a>
-          ))}
+          <a href="https://www.instagram.com/stonesoup.cc/" target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase text-stone-600 hover:text-accent transition-colors duration-300">
+            Instagram
+          </a>
         </div>
       </footer>
 
