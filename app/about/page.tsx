@@ -28,21 +28,13 @@ export default function AboutPage() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="relative aspect-[3/4] bg-surface-2 overflow-hidden"
         >
-          {/* Replace /images/profile.jpg with your actual photo */}
-          <div className="absolute inset-0 bg-gradient-to-br from-surface to-surface-2 flex items-end p-6">
-            <p className="font-sans text-xs text-muted tracking-widest uppercase">
-              Add your photo to /public/images/profile.jpg
-            </p>
-          </div>
-          {/* Uncomment once you add the photo:
           <Image
             src="/images/profile.jpg"
             alt="Ong Chee Choon"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
-          */}
         </motion.div>
 
         {/* Bio */}

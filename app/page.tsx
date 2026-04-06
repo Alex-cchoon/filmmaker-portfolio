@@ -164,14 +164,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="relative aspect-[3/4] bg-stone-900 border border-stone-800 rounded-sm overflow-hidden"
           >
-            <div className="absolute inset-0 flex items-end p-6">
-              <p className="text-xs text-stone-600 tracking-widest uppercase">
-                Add photo → /public/images/profile.jpg
-              </p>
-            </div>
-            {/* Uncomment once you add the photo:
-            <Image src="/images/profile.jpg" alt="Ong Chee Choon" fill className="object-cover" priority />
-            */}
+            <Image src="/images/profile.jpg" alt="Ong Chee Choon" fill className="object-cover object-top" priority />
           </motion.div>
 
           {/* Bio */}
