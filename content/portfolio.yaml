@@ -1,0 +1,256 @@
+projects:
+  - title: Carlsberg x Grab — Brewmaster Campaign
+    url: https://www.youtube.com/watch?v=d6yaRvJecik
+    thumbnail: null
+    client: Carlsberg x Grab
+    location: Singapore + Vietnam
+    year: null
+    category: Commercial
+    format: Regional campaign
+    roles:
+      - Director
+    description: A regional campaign for Carlsberg x Grab, built around the Brewmaster as he identifies the perfect dish to pair with each Carlsberg beer. Shot on location in Singapore & Vietnam for their respective markets.
+    awards: []
+    slide:
+      discriminant: true
+      value:
+        left: Brewmaster
+        right: Carlsberg × Grab
+        label: Commercial
+    caseStudy:
+      discriminant: false
+  - title: Meet Yu Wei — Scholar Feature
+    url: https://www.youtube.com/watch?v=JpZ4um5q4hg
+    thumbnail: null
+    client: LKC School of Medicine
+    location: Singapore
+    year: null
+    category: Corporate
+    format: Scholar feature
+    roles:
+      - Director
+      - Creative
+    description: A feature video following Tan Yu Wei, a Year 2 student at NTU's Lee Kong Chian School of Medicine and recipient of the Ong Hok Tien Scholarship. It traces his path from early academic setbacks to pursuing his dream of becoming a doctor, with the support of mentors, family, and donors.
+    awards: []
+    slide:
+      discriminant: true
+      value:
+        left: Meet
+        right: Yu Wei
+        label: Feature
+    caseStudy:
+      discriminant: false
+  - title: Adidas x NTU uShop
+    url: https://www.instagram.com/reel/Db4wHNARD_8/
+    thumbnail: null
+    client: Adidas
+    location: Singapore
+    year: null
+    category: Commercial
+    format: Brand spot
+    roles:
+      - Director
+      - Producer
+      - Creative
+    description: A spot for Adidas' collaboration with NTU, announcing the release of new merchandise — the first-ever partnership between the brand and the institution.
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: Boulder+
+    url: https://www.instagram.com/reel/DZ2JiFwSiEE/
+    thumbnail: null
+    client: Boulder Plus
+    location: Singapore
+    year: null
+    category: Commercial
+    format: Brand spot
+    roles:
+      - Director
+      - Creative
+    description: A spot for one of Singapore's most popular bouldering gyms, encouraging people to join and promoting the spirit of community within Boulder+.
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: Gurasu House
+    url: https://www.instagram.com/reel/DXV8jcIiShI/
+    thumbnail: null
+    client: Gurasu House
+    location: Singapore + Thailand
+    year: null
+    category: Commercial
+    format: Brand spot
+    roles:
+      - Director
+      - Creative
+    description: A spot promoting Gurasu House, Singapore's premier lampworking studio. Shot in both Chiang Mai and Singapore.
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: WKWSCI Open House 2025
+    url: https://www.youtube.com/watch?v=Gg9e4npE7vQ
+    thumbnail: null
+    client: Wee Kim Wee School of Communication & Information
+    location: Singapore
+    year: 2025
+    category: Commercial
+    format: Mixed-media spot
+    roles:
+      - Director
+      - Producer
+    description: A mixed-media spot for WKWSCI's 2025 Open House, built around the concept of blind boxes.
+    awards: []
+    slide:
+      discriminant: true
+      value:
+        left: Unlimited
+        right: Possibilities
+        label: Mixed media
+    caseStudy:
+      discriminant: true
+      value:
+        quote: Every pick reveals a different future.
+        brief: Show prospective students the range of paths open to them at WKWSCI’s Open House 2025.
+        approach: A mixed-media concept built around blind boxes — live action and animation, with each reveal landing on a new possibility.
+        metrics: []
+  - title: Nexon Engineering 10 Year Anniversary
+    url: https://www.youtube.com/watch?v=ZnqK61xEY1Q
+    thumbnail: null
+    client: Nexon Engineering
+    location: Singapore
+    year: 2024
+    category: Corporate
+    format: Anniversary film
+    roles:
+      - Director
+      - Producer
+      - Creative
+    description: A video produced for Nexon Engineering's 10th anniversary, screened at their anniversary dinner celebration.
+    awards: []
+    slide:
+      discriminant: true
+      value:
+        left: Nexon
+        right: Ten Years
+        label: Corporate
+    caseStudy:
+      discriminant: false
+  - title: Baltek
+    url: https://www.youtube.com/watch?v=iALANyNEF6c
+    thumbnail: null
+    client: Khmer Swimming Federation
+    location: Cambodia
+    year: 2023
+    category: Documentary
+    format: Documentary
+    roles:
+      - Director
+    description: A documentary following Cambodia's national water polo team as they make their debut at the 2023 SEA Games. Shot in Cambodia for the Khmer Swimming Federation.
+    awards: []
+    slide:
+      discriminant: true
+      value:
+        left: Baltek
+        right: Cambodia’s Water Polo Team
+        label: Documentary
+    caseStudy:
+      discriminant: true
+      value:
+        quote: A national team’s first SEA Games, in front of its own country.
+        brief: Follow the Cambodia water polo team’s journey leading up to its debut at the 2023 Southeast Asian Games.
+        approach: Stay close to the players through training and match days, and let the pressure of a home Games carry the story.
+        metrics: []
+  - title: Moments Before Magic
+    url: https://www.youtube.com/watch?v=xQyh9HBzHMA
+    thumbnail: null
+    client: Theatre of Wonder
+    location: ''
+    year: 2024
+    category: Documentary
+    format: Documentary
+    roles:
+      - Director
+      - DP
+      - Editor
+    description: A feature piece showcasing Kai Emmanuel, a magician from The Magic Bar — a hidden spot for top illusionists to perform to intimate groups.
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: TAFEP — Flexible Work Arrangements
+    url: https://www.youtube.com/watch?v=STMEAI608UY
+    thumbnail: null
+    client: TAFEP
+    location: ''
+    year: 2024
+    category: Corporate
+    format: Explainer
+    roles:
+      - DP
+      - Editor
+    description: ''
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: The Meat Club — Video 1
+    url: https://www.youtube.com/watch?v=M9SxX22xKG4
+    thumbnail: null
+    client: The Meat Club
+    location: ''
+    year: 2024
+    category: Commercial
+    format: Brand film
+    roles:
+      - Producer
+      - DP
+      - Editor
+    description: ''
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: The Meat Club — Video 2
+    url: https://www.youtube.com/watch?v=aOl31KmTHWM
+    thumbnail: null
+    client: The Meat Club
+    location: ''
+    year: 2024
+    category: Commercial
+    format: Brand film
+    roles:
+      - Producer
+      - DP
+      - Editor
+    description: ''
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title: The Meat Club — Video 3
+    url: https://www.youtube.com/watch?v=ia6-3v03wGk
+    thumbnail: null
+    client: The Meat Club
+    location: ''
+    year: 2024
+    category: Commercial
+    format: Brand film
+    roles:
+      - Producer
+      - DP
+      - Editor
+    description: ''
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false

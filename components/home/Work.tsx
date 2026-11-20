@@ -3,15 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  allRoles,
-  categories,
-  thumbnailFor,
-  videos,
-  type Category,
-  type Role,
-  type Video,
-} from "@/data/videos";
+import { thumbnailFor, type Category, type Role, type Video } from "@/data/videos";
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -112,12 +104,15 @@ function CasePanel({ v, onClose, onWatch }: { v: Video; onClose: () => void; onW
 }
 
 type Props = {
+  videos: Video[];
+  categories: Category[];
+  roles: Role[];
   openId: string | null;
   onOpenCase: (id: string | null) => void;
   onWatch: (v: Video) => void;
 };
 
-export default function Work({ openId, onOpenCase, onWatch }: Props) {
+export default function Work({ videos, categories, roles: allRoles, openId, onOpenCase, onWatch }: Props) {
   const [cat, setCat] = useState<Category | "All">("All");
   const [role, setRole] = useState<Role | "All">("All");
 
@@ -126,7 +121,7 @@ export default function Work({ openId, onOpenCase, onWatch }: Props) {
       videos
         .map((v, i) => ({ v, n: i + 1 }))
         .filter(({ v }) => (cat === "All" || v.category === cat) && (role === "All" || v.roles.includes(role))),
-    [cat, role]
+    [videos, cat, role]
   );
   const open = videos.find((v) => v.id === openId && v.caseStudy) ?? null;
 
