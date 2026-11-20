@@ -28,7 +28,7 @@ projects:
     url: https://www.youtube.com/watch?v=HgtHhKop7GU
     client: LKC School of Medicine
     location: Singapore
-    year: null
+    year: 2026
     category: Corporate
     format: Scholar feature
     roles:
@@ -41,7 +41,11 @@ projects:
       - meet-yu-wei/still-3.jpg
       - meet-yu-wei/still-4.jpg
       - meet-yu-wei/still-5.jpg
-    stats: []
+    stats:
+      - value: '7'
+        label: Crew
+      - value: '1'
+        label: Shoot day
     awards: []
     slide:
       discriminant: true
