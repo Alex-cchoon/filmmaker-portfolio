@@ -196,13 +196,20 @@ projects:
     format: Corporate film
     roles: []
     description: A corporate video introducing NX Recycling.
-    stills: []
+    stills:
+      - nx-recycling/still-1.jpg
+      - nx-recycling/still-2.jpg
+      - nx-recycling/still-3.jpg
+      - nx-recycling/still-4.jpg
+      - nx-recycling/still-5.jpg
+      - nx-recycling/still-6.jpg
     stats: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
+    thumbnail: nx-recycling/cover.jpg
   - title:
       name: Baltek
       slug: baltek
