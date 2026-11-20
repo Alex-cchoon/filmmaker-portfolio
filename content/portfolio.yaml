@@ -186,6 +186,24 @@ projects:
     caseStudy:
       discriminant: false
   - title:
+      name: NX Recycling
+      slug: nx-recycling
+    url: https://www.youtube.com/watch?v=t6xV3vRoAaU
+    client: NX Recycling
+    location: ''
+    year: 2026
+    category: Corporate
+    format: Corporate film
+    roles: []
+    description: A corporate video introducing NX Recycling.
+    stills: []
+    stats: []
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title:
       name: Baltek
       slug: baltek
     url: https://www.youtube.com/watch?v=iALANyNEF6c
