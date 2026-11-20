@@ -42,7 +42,6 @@ export const getVideos = cache(async (): Promise<Video[]> => {
         awards: p.awards.filter(Boolean),
         stills: p.stills.map(imagePath).filter((s): s is string => !!s),
         stats: p.stats.filter((s) => s.value || s.label),
-        credits: p.credits.filter((c) => c.role || c.name),
       };
       if (p.slide.discriminant) v.slide = { ...p.slide.value };
       if (p.caseStudy.discriminant) v.caseStudy = { ...p.caseStudy.value };

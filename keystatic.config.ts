@@ -93,17 +93,6 @@ export default config({
                   [props.fields.value.value, props.fields.label.value].filter(Boolean).join(" ") || "New fact",
               }
             ),
-            credits: fields.array(
-              fields.object({
-                role: fields.text({ label: "Role", description: "e.g. Director, DP, Starring" }),
-                name: fields.text({ label: "Name", description: "e.g. Ong Chee Choon, @handle" }),
-              }),
-              {
-                label: "Credits",
-                itemLabel: (props) =>
-                  [props.fields.role.value, props.fields.name.value].filter(Boolean).join(" — ") || "New credit",
-              }
-            ),
             awards: fields.array(fields.text({ label: "Award or festival selection" }), {
               label: "Awards & festival selections",
               itemLabel: (props) => props.value || "New award",

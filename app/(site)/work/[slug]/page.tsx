@@ -128,32 +128,15 @@ export default async function ProjectPage({ params }: Params) {
         </section>
       )}
 
-      {/* Credits + awards */}
-      {(v.credits.length > 0 || (v.awards ?? []).length > 0) && (
-        <section className="px-6 md:px-8 pb-24 flex flex-col items-center gap-14 text-center">
-          {v.credits.length > 0 && (
-            <div className="flex flex-col items-center">
-              <h2 className="font-serif font-normal text-[clamp(36px,3.6vw,52px)] mb-8">Credits</h2>
-              <dl className="flex flex-col gap-2.5">
-                {v.credits.map((c, k) => (
-                  <div key={k} className="flex flex-wrap justify-center gap-x-3">
-                    <dt className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-2 pt-1">{c.role}</dt>
-                    <dd className="text-base">{c.name}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          )}
-          {(v.awards ?? []).length > 0 && (
-            <div className="flex flex-col items-center gap-3">
-              <Label>Awards &amp; selections</Label>
-              {v.awards!.map((a) => (
-                <p key={a} className="font-serif text-2xl">
-                  <span className="text-gold">•</span> {a}
-                </p>
-              ))}
-            </div>
-          )}
+      {/* Awards */}
+      {(v.awards ?? []).length > 0 && (
+        <section className="px-6 md:px-8 pb-24 flex flex-col items-center gap-3 text-center">
+          <Label>Awards &amp; selections</Label>
+          {v.awards!.map((a) => (
+            <p key={a} className="font-serif text-2xl">
+              <span className="text-gold">•</span> {a}
+            </p>
+          ))}
         </section>
       )}
 

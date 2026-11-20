@@ -16,7 +16,6 @@ export type Category = "Commercial" | "Documentary" | "Corporate" | "Other";
 const CATEGORY_ORDER: Category[] = ["Commercial", "Documentary", "Corporate", "Other"];
 
 export type Stat = { value: string; label: string };
-export type Credit = { role: string; name: string };
 
 export type CaseStudy = {
   quote: string;
@@ -41,7 +40,6 @@ export type Video = {
   awards?: string[];
   stills: string[];
   stats: Stat[];
-  credits: Credit[];
   slide?: { left: string; right: string; label: string };
   caseStudy?: CaseStudy;
 };
