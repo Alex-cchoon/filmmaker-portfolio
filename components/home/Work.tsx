@@ -61,7 +61,7 @@ function CasePanel({ v, onClose, onWatch }: { v: Video; onClose: () => void; onW
         <div className="flex-[1_1_420px] p-8 md:p-10 flex flex-col gap-5">
           <div className="flex justify-between items-start gap-4">
             <p className="font-mono text-xs tracking-[0.12em] text-gold uppercase">
-              Case study · {v.client} · {v.year}
+              {["Case study", v.client, v.location, v.year].filter(Boolean).join(" · ")}
             </p>
             <button type="button" onClick={onClose} className="font-mono text-xs tracking-[0.1em] text-muted-2 hover:text-cream px-2 py-1">
               CLOSE ✕
@@ -176,8 +176,13 @@ export default function Work({ openId, onOpenCase, onWatch }: Props) {
                   className="group text-left flex flex-col"
                 >
                   <div className={`relative aspect-video overflow-hidden bg-panel ${isOpen ? "outline outline-1 outline-gold outline-offset-4" : ""}`}>
-                    {thumb && (
+                    {thumb ? (
                       <Image src={thumb} alt="" fill sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                    ) : (
+                      <span className="absolute inset-0 flex flex-col items-center justify-center gap-3 border border-line px-6 text-center transition-colors group-hover:bg-band">
+                        <span className="font-serif italic text-[clamp(28px,3vw,40px)] leading-none">{v.client ?? v.title}</span>
+                        <span className="font-mono text-[11px] tracking-[0.14em] text-muted-2">▸ PLAY REEL</span>
+                      </span>
                     )}
                     {v.caseStudy && (
                       <span className="absolute left-3 top-3 px-2 py-1 bg-ink/70 font-mono text-[10px] tracking-[0.12em]">CASE STUDY +</span>
@@ -195,7 +200,7 @@ export default function Work({ openId, onOpenCase, onWatch }: Props) {
                   </div>
                   <span className="mt-1.5 font-serif text-[30px] leading-[1.05] group-hover:text-gold transition-colors">{v.title}</span>
                   <span className="mt-1.5 font-mono text-xs tracking-[0.08em] text-cream-3 uppercase">
-                    {[v.client, v.year].filter(Boolean).join(" · ")}
+                    {[v.client, v.location, v.year].filter(Boolean).join(" · ")}
                   </span>
                   <span className="mt-1.5 font-mono text-[11px] tracking-[0.1em] text-gold uppercase">{v.roles.join(" · ")}</span>
                 </motion.button>

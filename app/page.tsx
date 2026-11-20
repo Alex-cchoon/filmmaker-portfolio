@@ -51,7 +51,7 @@ export default function Home() {
           </p>
           <p className="text-base leading-relaxed text-cream-2 max-w-[620px]">
             I’m Ong Chee Choon, a freelance filmmaker based in Malaysia. I make documentaries, commercials and brand
-            films for clients including Singapore Turf Club, NTU, TAFEP and Nexon.
+            films for clients including Carlsberg, Grab, Adidas, NTU and Nexon.
           </p>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-6 border-t border-line pt-6">
             {stats.map((s) => (
