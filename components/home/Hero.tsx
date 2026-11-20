@@ -110,7 +110,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
           <button
             type="button"
             onClick={() => onOpen(cur)}
-            aria-label={cur.caseStudy ? `Open case study: ${cur.title}` : `Watch ${cur.title}`}
+            aria-label={`Open project: ${cur.title}`}
             className="group relative aspect-[16/10] w-full overflow-hidden border border-cream/25 bg-panel"
           >
             <AnimatePresence mode="sync">
@@ -122,7 +122,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
             </AnimatePresence>
             <Corners />
             <span className="absolute inset-x-0 bottom-0 py-4 font-mono text-xs tracking-[0.1em] bg-ink/50 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">
-              {cur.caseStudy ? "▸ VIEW CASE STUDY" : "▸ WATCH FILM"}
+              ▸ VIEW PROJECT
             </span>
           </button>
           <div className="flex justify-between gap-4 font-mono text-[13px] tracking-[0.08em] uppercase">

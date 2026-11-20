@@ -36,16 +36,22 @@ export default config({
       schema: {
         projects: fields.array(
           fields.object({
-            title: fields.text({ label: "Title", validation: { length: { min: 1 } } }),
+            title: fields.slug({
+              name: { label: "Title", validation: { length: { min: 1 } } },
+              slug: {
+                label: "Page address",
+                description: "The end of this project's link, e.g. baltek → stonesoup.cc/work/baltek",
+              },
+            }),
             url: fields.url({
               label: "Video link",
               description: "YouTube, Vimeo or Instagram reel link",
               validation: { isRequired: true },
             }),
             thumbnail: fields.image({
-              label: "Still image",
+              label: "Cover image",
               description:
-                "Shown on the tile. Needed for Instagram reels — for YouTube, the video's own thumbnail is used if you leave this empty.",
+                "Cover image for the tile. Needed for Instagram reels — for YouTube, the video's own thumbnail is used if you leave this empty.",
               directory: "public/images/projects",
               publicPath: "/images/projects/",
             }),
@@ -65,6 +71,39 @@ export default config({
             format: fields.text({ label: "Format", description: "Short label, e.g. Brand spot, Regional campaign" }),
             roles: fields.multiselect({ label: "My roles", options: [...roleOptions] }),
             description: fields.text({ label: "Description", multiline: true }),
+            stills: fields.array(
+              fields.image({
+                label: "Still",
+                directory: "public/images/projects",
+                publicPath: "/images/projects/",
+              }),
+              {
+                label: "Stills — gallery on the project page",
+                itemLabel: (props) => props.value?.filename ?? "Still",
+              }
+            ),
+            stats: fields.array(
+              fields.object({
+                value: fields.text({ label: "Number", description: "e.g. 18, 2, 1.2M" }),
+                label: fields.text({ label: "Caption", description: "e.g. Crew, Shoot days, Views" }),
+              }),
+              {
+                label: "Quick facts — e.g. 18 Crew · 6 Cast · 2 Shoot days",
+                itemLabel: (props) =>
+                  [props.fields.value.value, props.fields.label.value].filter(Boolean).join(" ") || "New fact",
+              }
+            ),
+            credits: fields.array(
+              fields.object({
+                role: fields.text({ label: "Role", description: "e.g. Director, DP, Starring" }),
+                name: fields.text({ label: "Name", description: "e.g. Ong Chee Choon, @handle" }),
+              }),
+              {
+                label: "Credits",
+                itemLabel: (props) =>
+                  [props.fields.role.value, props.fields.name.value].filter(Boolean).join(" — ") || "New credit",
+              }
+            ),
             awards: fields.array(fields.text({ label: "Award or festival selection" }), {
               label: "Awards & festival selections",
               itemLabel: (props) => props.value || "New award",
@@ -81,23 +120,12 @@ export default config({
               }
             ),
             caseStudy: fields.conditional(
-              fields.checkbox({ label: "Add a case study", defaultValue: false }),
+              fields.checkbox({ label: "Add brief, approach & quote", defaultValue: false }),
               {
                 true: fields.object({
                   quote: fields.text({ label: "One-line quote" }),
                   brief: fields.text({ label: "The brief", multiline: true }),
                   approach: fields.text({ label: "The approach", multiline: true }),
-                  metrics: fields.array(
-                    fields.object({
-                      value: fields.text({ label: "Number", description: "e.g. 1.2M, 3, 12+" }),
-                      label: fields.text({ label: "Caption", description: "e.g. Views, Shoot days" }),
-                    }),
-                    {
-                      label: "Big numbers",
-                      itemLabel: (props) =>
-                        [props.fields.value.value, props.fields.label.value].filter(Boolean).join(" ") || "New number",
-                    }
-                  ),
                 }),
                 false: fields.empty(),
               }
@@ -105,7 +133,8 @@ export default config({
           }),
           {
             label: "Projects — drag to reorder (top = first on the site)",
-            itemLabel: (props) => props.fields.title.value || "New project",
+            slugField: "title",
+            itemLabel: (props) => props.fields.title.value.name || "New project",
           }
         ),
       },

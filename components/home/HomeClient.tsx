@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Hero from "@/components/home/Hero";
 import Work from "@/components/home/Work";
-import VideoModal from "@/components/VideoModal";
-import { categoriesIn, clientCountIn, rolesIn, type SiteInfo, type Video } from "@/data/videos";
+import { categoriesIn, clientCountIn, projectHref, rolesIn, type SiteInfo, type Video } from "@/data/videos";
 
 /** First sentence upright, the rest in italics — matches the original design. */
 function Headline({ text }: { text: string }) {
@@ -20,22 +20,11 @@ function Headline({ text }: { text: string }) {
 
 export default function HomeClient({ videos, site }: { videos: Video[]; site: SiteInfo }) {
   const slides = videos.filter((v) => v.slide);
-  const firstCase = videos.find((v) => v.caseStudy)?.id ?? null;
   const awardCount = videos.reduce((n, v) => n + (v.awards?.length ?? 0), 0);
 
   const [slide, setSlide] = useState(0);
-  const [openCase, setOpenCase] = useState<string | null>(firstCase);
-  const [playing, setPlaying] = useState<Video | null>(null);
-  const closeModal = useCallback(() => setPlaying(null), []);
-
-  const openFromHero = (v: Video) => {
-    if (v.caseStudy) {
-      setOpenCase(v.id);
-      requestAnimationFrame(() => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" }));
-    } else {
-      setPlaying(v);
-    }
-  };
+  const router = useRouter();
+  const openFromHero = (v: Video) => router.push(projectHref(v));
 
   const stats = [
     { value: String(videos.length), label: "Films" },
@@ -55,9 +44,6 @@ export default function HomeClient({ videos, site }: { videos: Video[]; site: Si
         videos={videos}
         categories={categoriesIn(videos)}
         roles={rolesIn(videos)}
-        openId={openCase}
-        onOpenCase={setOpenCase}
-        onWatch={setPlaying}
       />
 
       {/* ── ABOUT ─────────────────────────────────────────── */}
@@ -99,8 +85,6 @@ export default function HomeClient({ videos, site }: { videos: Video[]; site: Si
           <a href="#top" className="hover:text-gold">BACK TO TOP ↑</a>
         </div>
       </footer>
-
-      <VideoModal video={playing} onClose={closeModal} />
     </main>
   );
 }

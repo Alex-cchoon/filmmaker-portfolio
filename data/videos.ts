@@ -15,17 +15,19 @@ const ROLE_ORDER: Role[] = ["Director", "Producer", "Creative", "Assistant Direc
 export type Category = "Commercial" | "Documentary" | "Corporate" | "Other";
 const CATEGORY_ORDER: Category[] = ["Commercial", "Documentary", "Corporate", "Other"];
 
-export type Metric = { value: string; label: string };
+export type Stat = { value: string; label: string };
+export type Credit = { role: string; name: string };
 
 export type CaseStudy = {
   quote: string;
   brief: string;
   approach: string;
-  metrics?: Metric[];
 };
 
 export type Video = {
   id: string;
+  /** Page address: /work/<slug> */
+  slug: string;
   title: string;
   url: string;
   thumbnail?: string;
@@ -37,6 +39,9 @@ export type Video = {
   roles: Role[];
   description?: string;
   awards?: string[];
+  stills: string[];
+  stats: Stat[];
+  credits: Credit[];
   slide?: { left: string; right: string; label: string };
   caseStudy?: CaseStudy;
 };
@@ -56,6 +61,8 @@ export const rolesIn = (videos: Video[]) => ROLE_ORDER.filter((r) => videos.some
 
 export const clientCountIn = (videos: Video[]) =>
   new Set(videos.map((v) => v.client).filter((c) => c && c !== "Personal")).size;
+
+export const projectHref = (v: Video) => `/work/${v.slug}`;
 
 export function youTubeId(url: string): string | null {
   const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([^&?/]+)/);

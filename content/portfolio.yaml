@@ -1,7 +1,8 @@
 projects:
-  - title: Carlsberg x Grab — Brewmaster Campaign
+  - title:
+      name: Carlsberg x Grab — Brewmaster Campaign
+      slug: carlsberg-grab
     url: https://www.youtube.com/watch?v=d6yaRvJecik
-    thumbnail: null
     client: Carlsberg x Grab
     location: Singapore + Vietnam
     year: null
@@ -10,6 +11,9 @@ projects:
     roles:
       - Director
     description: A regional campaign for Carlsberg x Grab, built around the Brewmaster as he identifies the perfect dish to pair with each Carlsberg beer. Shot on location in Singapore & Vietnam for their respective markets.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: true
@@ -19,9 +23,10 @@ projects:
         label: Commercial
     caseStudy:
       discriminant: false
-  - title: Meet Yu Wei — Scholar Feature
+  - title:
+      name: Meet Yu Wei — Scholar Feature
+      slug: meet-yu-wei
     url: https://www.youtube.com/watch?v=JpZ4um5q4hg
-    thumbnail: null
     client: LKC School of Medicine
     location: Singapore
     year: null
@@ -31,6 +36,9 @@ projects:
       - Director
       - Creative
     description: A feature video following Tan Yu Wei, a Year 2 student at NTU's Lee Kong Chian School of Medicine and recipient of the Ong Hok Tien Scholarship. It traces his path from early academic setbacks to pursuing his dream of becoming a doctor, with the support of mentors, family, and donors.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: true
@@ -40,9 +48,10 @@ projects:
         label: Feature
     caseStudy:
       discriminant: false
-  - title: Adidas x NTU uShop
+  - title:
+      name: Adidas x NTU uShop
+      slug: adidas-ntu-ushop
     url: https://www.instagram.com/reel/Db4wHNARD_8/
-    thumbnail: null
     client: Adidas
     location: Singapore
     year: null
@@ -53,14 +62,18 @@ projects:
       - Producer
       - Creative
     description: A spot for Adidas' collaboration with NTU, announcing the release of new merchandise — the first-ever partnership between the brand and the institution.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: Boulder+
+  - title:
+      name: Boulder+
+      slug: boulder-plus
     url: https://www.instagram.com/reel/DZ2JiFwSiEE/
-    thumbnail: null
     client: Boulder Plus
     location: Singapore
     year: null
@@ -70,14 +83,18 @@ projects:
       - Director
       - Creative
     description: A spot for one of Singapore's most popular bouldering gyms, encouraging people to join and promoting the spirit of community within Boulder+.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: Gurasu House
+  - title:
+      name: Gurasu House
+      slug: gurasu-house
     url: https://www.instagram.com/reel/DXV8jcIiShI/
-    thumbnail: null
     client: Gurasu House
     location: Singapore + Thailand
     year: null
@@ -87,14 +104,18 @@ projects:
       - Director
       - Creative
     description: A spot promoting Gurasu House, Singapore's premier lampworking studio. Shot in both Chiang Mai and Singapore.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: WKWSCI Open House 2025
+  - title:
+      name: WKWSCI Open House 2025
+      slug: wkwsci-open-house-2025
     url: https://www.youtube.com/watch?v=Gg9e4npE7vQ
-    thumbnail: null
     client: Wee Kim Wee School of Communication & Information
     location: Singapore
     year: 2025
@@ -104,6 +125,9 @@ projects:
       - Director
       - Producer
     description: A mixed-media spot for WKWSCI's 2025 Open House, built around the concept of blind boxes.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: true
@@ -117,10 +141,10 @@ projects:
         quote: Every pick reveals a different future.
         brief: Show prospective students the range of paths open to them at WKWSCI’s Open House 2025.
         approach: A mixed-media concept built around blind boxes — live action and animation, with each reveal landing on a new possibility.
-        metrics: []
-  - title: Nexon Engineering 10 Year Anniversary
+  - title:
+      name: Nexon Engineering 10 Year Anniversary
+      slug: nexon-10-years
     url: https://www.youtube.com/watch?v=ZnqK61xEY1Q
-    thumbnail: null
     client: Nexon Engineering
     location: Singapore
     year: 2024
@@ -131,6 +155,9 @@ projects:
       - Producer
       - Creative
     description: A video produced for Nexon Engineering's 10th anniversary, screened at their anniversary dinner celebration.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: true
@@ -140,9 +167,10 @@ projects:
         label: Corporate
     caseStudy:
       discriminant: false
-  - title: Baltek
+  - title:
+      name: Baltek
+      slug: baltek
     url: https://www.youtube.com/watch?v=iALANyNEF6c
-    thumbnail: null
     client: Khmer Swimming Federation
     location: Cambodia
     year: 2023
@@ -151,6 +179,9 @@ projects:
     roles:
       - Director
     description: A documentary following Cambodia's national water polo team as they make their debut at the 2023 SEA Games. Shot in Cambodia for the Khmer Swimming Federation.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: true
@@ -164,10 +195,10 @@ projects:
         quote: A national team’s first SEA Games, in front of its own country.
         brief: Follow the Cambodia water polo team’s journey leading up to its debut at the 2023 Southeast Asian Games.
         approach: Stay close to the players through training and match days, and let the pressure of a home Games carry the story.
-        metrics: []
-  - title: Moments Before Magic
+  - title:
+      name: Moments Before Magic
+      slug: moments-before-magic
     url: https://www.youtube.com/watch?v=xQyh9HBzHMA
-    thumbnail: null
     client: Theatre of Wonder
     location: ''
     year: 2024
@@ -178,14 +209,18 @@ projects:
       - DP
       - Editor
     description: A feature piece showcasing Kai Emmanuel, a magician from The Magic Bar — a hidden spot for top illusionists to perform to intimate groups.
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: TAFEP — Flexible Work Arrangements
+  - title:
+      name: TAFEP — Flexible Work Arrangements
+      slug: tafep-flexible-work
     url: https://www.youtube.com/watch?v=STMEAI608UY
-    thumbnail: null
     client: TAFEP
     location: ''
     year: 2024
@@ -195,14 +230,18 @@ projects:
       - DP
       - Editor
     description: ''
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: The Meat Club — Video 1
+  - title:
+      name: The Meat Club — Video 1
+      slug: the-meat-club-1
     url: https://www.youtube.com/watch?v=M9SxX22xKG4
-    thumbnail: null
     client: The Meat Club
     location: ''
     year: 2024
@@ -213,14 +252,18 @@ projects:
       - DP
       - Editor
     description: ''
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: The Meat Club — Video 2
+  - title:
+      name: The Meat Club — Video 2
+      slug: the-meat-club-2
     url: https://www.youtube.com/watch?v=aOl31KmTHWM
-    thumbnail: null
     client: The Meat Club
     location: ''
     year: 2024
@@ -231,14 +274,18 @@ projects:
       - DP
       - Editor
     description: ''
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
-  - title: The Meat Club — Video 3
+  - title:
+      name: The Meat Club — Video 3
+      slug: the-meat-club-3
     url: https://www.youtube.com/watch?v=ia6-3v03wGk
-    thumbnail: null
     client: The Meat Club
     location: ''
     year: 2024
@@ -249,6 +296,9 @@ projects:
       - DP
       - Editor
     description: ''
+    stills: []
+    stats: []
+    credits: []
     awards: []
     slide:
       discriminant: false
