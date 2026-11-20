@@ -64,6 +64,7 @@ export default config({
                 { label: "Commercial", value: "Commercial" },
                 { label: "Documentary", value: "Documentary" },
                 { label: "Corporate", value: "Corporate" },
+                { label: "Broadcast / TV", value: "Broadcast" },
                 { label: "Other", value: "Other" },
               ],
               defaultValue: "Commercial",

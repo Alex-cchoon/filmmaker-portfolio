@@ -12,8 +12,8 @@ export type Role =
 
 const ROLE_ORDER: Role[] = ["Director", "Producer", "Creative", "Assistant Director", "DP", "Editor", "Colourist"];
 
-export type Category = "Commercial" | "Documentary" | "Corporate" | "Other";
-const CATEGORY_ORDER: Category[] = ["Commercial", "Documentary", "Corporate", "Other"];
+export type Category = "Commercial" | "Documentary" | "Corporate" | "Broadcast" | "Other";
+const CATEGORY_ORDER: Category[] = ["Commercial", "Documentary", "Corporate", "Broadcast", "Other"];
 
 export type Stat = { value: string; label: string };
 

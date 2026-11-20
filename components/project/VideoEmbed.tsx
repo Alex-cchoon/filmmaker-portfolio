@@ -43,10 +43,38 @@ export default function VideoEmbed({ v }: { v: Video }) {
       : null;
 
   if (!src) {
+    let site = "";
+    try {
+      const h = new URL(v.url).hostname.replace(/^www\./, "");
+      site = h.startsWith("mewatch.") ? "mewatch" : h;
+    } catch {}
+    const label = site ? `WATCH ON ${site.toUpperCase()} ↗` : "▸ WATCH FILM";
+    if (!thumb) {
+      return (
+        <a href={v.url} target="_blank" rel="noopener noreferrer" className="block text-center font-mono text-sm tracking-[0.1em] border-b border-cream w-fit mx-auto">
+          {label}
+        </a>
+      );
+    }
+    // Poster mode: for links that can't be embedded (e.g. a broadcast series on mewatch),
+    // show the full poster without cropping, over a blurred copy of itself.
     return (
-      <a href={v.url} target="_blank" rel="noopener noreferrer" className="block text-center font-mono text-sm tracking-[0.1em] border-b border-cream w-fit mx-auto">
-        ▸ WATCH FILM
-      </a>
+      <div className="flex flex-col items-center gap-6">
+        <a
+          href={v.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${v.title} — ${label}`}
+          className="group relative block aspect-video w-full overflow-hidden border border-line bg-black"
+        >
+          <Image src={thumb} alt="" fill sizes="100vw" aria-hidden className="object-cover scale-110 blur-2xl opacity-50" />
+          <Image src={thumb} alt={v.title} fill priority sizes="(min-width: 1280px) 1200px, 100vw" className="object-contain" />
+          <Corners />
+        </a>
+        <a href={v.url} target="_blank" rel="noopener noreferrer" className="font-mono text-sm tracking-[0.1em] border-b border-cream pb-1 hover:text-gold hover:border-gold transition-colors">
+          {label}
+        </a>
+      </div>
     );
   }
 
