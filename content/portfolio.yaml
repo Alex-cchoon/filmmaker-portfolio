@@ -35,7 +35,12 @@ projects:
       - Director
       - Creative
     description: A feature video following Tan Yu Wei, a Year 2 student at NTU's Lee Kong Chian School of Medicine and recipient of the Ong Hok Tien Scholarship. It traces his path from early academic setbacks to pursuing his dream of becoming a doctor, with the support of mentors, family, and donors.
-    stills: []
+    stills:
+      - meet-yu-wei/still-1.jpg
+      - meet-yu-wei/still-2.jpg
+      - meet-yu-wei/still-3.jpg
+      - meet-yu-wei/still-4.jpg
+      - meet-yu-wei/still-5.jpg
     stats: []
     awards: []
     slide:
@@ -46,6 +51,7 @@ projects:
         label: Feature
     caseStudy:
       discriminant: false
+    thumbnail: meet-yu-wei/cover.jpg
   - title:
       name: Adidas x NTU uShop
       slug: adidas-ntu-ushop
