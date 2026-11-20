@@ -92,13 +92,20 @@ projects:
       - Director
       - Creative
     description: A spot for one of Singapore's most popular bouldering gyms, encouraging people to join and promoting the spirit of community within Boulder+.
-    stills: []
+    stills:
+      - boulder-plus/still-1.jpg
+      - boulder-plus/still-2.jpg
+      - boulder-plus/still-3.jpg
+      - boulder-plus/still-4.jpg
+      - boulder-plus/still-5.jpg
+      - boulder-plus/still-6.jpg
     stats: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
+    thumbnail: boulder-plus/cover.jpg
   - title:
       name: Gurasu House
       slug: gurasu-house
