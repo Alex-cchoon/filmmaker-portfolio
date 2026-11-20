@@ -7,7 +7,7 @@ import { config, fields, singleton } from "@keystatic/core";
 // ─────────────────────────────────────────────────────────────
 
 // Keystatic Cloud project, in the form "team-name/project-name".
-const CLOUD_PROJECT = "TEAM/PROJECT";
+const CLOUD_PROJECT = "stone-soupstonesoup/filmmaker-portfolio";
 
 const roleOptions = [
   { label: "Director", value: "Director" },
@@ -21,7 +21,7 @@ const roleOptions = [
 
 export default config({
   storage:
-    process.env.NODE_ENV === "development" || CLOUD_PROJECT === "TEAM/PROJECT"
+    process.env.NODE_ENV === "development"
       ? { kind: "local" }
       : { kind: "cloud" },
   cloud: { project: CLOUD_PROJECT },
