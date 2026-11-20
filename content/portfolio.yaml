@@ -261,6 +261,33 @@ projects:
         approach: Stay close to the players through training and match days, and let the pressure of a home Games carry the story.
     trimBorder: true
   - title:
+      name: Word Whiz Extensions — Season 3
+      slug: word-whiz-extensions
+    url: https://www.mewatch.sg/show/Word-Whiz-Extensions-520018
+    thumbnail: word-whiz-extensions/cover.jpg
+    trimBorder: false
+    client: Mediacorp
+    location: Singapore
+    year: null
+    category: Broadcast
+    format: Mandarin children’s edutainment series
+    roles:
+      - Director
+    description: Season 3 of 《华文“浆”好玩》, Mediacorp’s Mandarin edutainment series for children, streaming on mewatch. I directed two of the season’s segments, 欢乐练一练 and 欢乐吃一吃, at 16 episodes each.
+    stills: []
+    stats:
+      - value: '32'
+        label: Episodes
+      - value: '2'
+        label: Segments
+      - value: S3
+        label: Season
+    awards: []
+    slide:
+      discriminant: false
+    caseStudy:
+      discriminant: false
+  - title:
       name: Moments Before Magic
       slug: moments-before-magic
     url: https://www.youtube.com/watch?v=xQyh9HBzHMA
