@@ -194,7 +194,9 @@ projects:
     year: 2026
     category: Corporate
     format: Corporate film
-    roles: []
+    roles:
+      - Director
+      - Producer
     description: A corporate video introducing NX Recycling.
     stills:
       - nx-recycling/still-1.jpg
@@ -203,7 +205,11 @@ projects:
       - nx-recycling/still-4.jpg
       - nx-recycling/still-5.jpg
       - nx-recycling/still-6.jpg
-    stats: []
+    stats:
+      - value: '4'
+        label: Crew
+      - value: '1'
+        label: Shoot day
     awards: []
     slide:
       discriminant: false
