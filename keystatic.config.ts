@@ -55,6 +55,10 @@ export default config({
               directory: "public/images/projects",
               publicPath: "/images/projects/",
             }),
+            trimBorder: fields.checkbox({
+              label: "Cover has a black border — zoom in to hide it",
+              description: "Tick this if the cover (often a YouTube thumbnail) shows black bars around the picture.",
+            }),
             client: fields.text({ label: "Client" }),
             location: fields.text({ label: "Where it was shot", description: "e.g. Singapore + Vietnam" }),
             year: fields.integer({ label: "Year" }),

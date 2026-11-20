@@ -22,6 +22,7 @@ projects:
         label: Commercial
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: Meet Yu Wei — Scholar Feature
       slug: meet-yu-wei
@@ -55,6 +56,7 @@ projects:
     caseStudy:
       discriminant: false
     thumbnail: meet-yu-wei/cover.jpg
+    trimBorder: false
   - title:
       name: Adidas x NTU uShop
       slug: adidas-ntu-ushop
@@ -88,6 +90,7 @@ projects:
     caseStudy:
       discriminant: false
     thumbnail: adidas-ntu-ushop/cover.jpg
+    trimBorder: false
   - title:
       name: Boulder+
       slug: boulder-plus
@@ -115,6 +118,7 @@ projects:
     caseStudy:
       discriminant: false
     thumbnail: boulder-plus/cover.jpg
+    trimBorder: false
   - title:
       name: Gurasu House
       slug: gurasu-house
@@ -141,6 +145,7 @@ projects:
     caseStudy:
       discriminant: false
     thumbnail: gurasu-house/cover.jpg
+    trimBorder: false
   - title:
       name: WKWSCI Open House 2025
       slug: wkwsci-open-house-2025
@@ -168,6 +173,7 @@ projects:
         quote: Every pick reveals a different future.
         brief: Show prospective students the range of paths open to them at WKWSCI’s Open House 2025.
         approach: A mixed-media concept built around blind boxes — live action and animation, with each reveal landing on a new possibility.
+    trimBorder: false
   - title:
       name: Nexon Engineering 10 Year Anniversary
       slug: nexon-10-years
@@ -193,6 +199,7 @@ projects:
         label: Corporate
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: NX Recycling
       slug: nx-recycling
@@ -224,6 +231,7 @@ projects:
     caseStudy:
       discriminant: false
     thumbnail: nx-recycling/cover.jpg
+    trimBorder: false
   - title:
       name: Baltek
       slug: baltek
@@ -251,6 +259,7 @@ projects:
         quote: A national team’s first SEA Games, in front of its own country.
         brief: Follow the Cambodia water polo team’s journey leading up to its debut at the 2023 Southeast Asian Games.
         approach: Stay close to the players through training and match days, and let the pressure of a home Games carry the story.
+    trimBorder: true
   - title:
       name: Moments Before Magic
       slug: moments-before-magic
@@ -271,6 +280,7 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: TAFEP — Flexible Work Arrangements
       slug: tafep-flexible-work
@@ -290,6 +300,7 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: The Meat Club — Video 1
       slug: the-meat-club-1
@@ -310,6 +321,7 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: The Meat Club — Video 2
       slug: the-meat-club-2
@@ -330,6 +342,7 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    trimBorder: false
   - title:
       name: The Meat Club — Video 3
       slug: the-meat-club-3
@@ -350,3 +363,4 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    trimBorder: false

@@ -30,6 +30,8 @@ export type Video = {
   title: string;
   url: string;
   thumbnail?: string;
+  /** Zoom the cover in to hide a black frame around the picture. */
+  trimBorder?: boolean;
   year?: number;
   client?: string;
   location?: string;

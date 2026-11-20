@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Cover from "@/components/Cover";
 import { useState } from "react";
 import { instagramEmbed, thumbnailFor, youTubeId, type Video } from "@/data/videos";
 
@@ -90,7 +91,7 @@ export default function VideoEmbed({ v }: { v: Video }) {
         />
       ) : (
         <button type="button" onClick={() => setPlaying(true)} aria-label={`Play ${v.title}`} className="group absolute inset-0">
-          {thumb && <Image src={thumb} alt="" fill priority sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />}
+          {thumb && <Cover trim={v.trimBorder} src={thumb} alt="" fill priority sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />}
           <span className="absolute inset-0 bg-ink/25 group-hover:bg-ink/10 transition-colors" />
           <span className="absolute inset-0 flex items-center justify-center">
             <span className="w-20 h-20 rounded-full border border-cream bg-ink/40 flex items-center justify-center group-hover:bg-cream group-hover:text-ink transition-colors">

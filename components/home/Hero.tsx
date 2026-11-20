@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Cover from "@/components/Cover";
 import { AnimatePresence, motion } from "framer-motion";
 import { thumbnailFor, type Video } from "@/data/videos";
 
@@ -50,7 +51,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
             className="absolute inset-0"
             aria-hidden
           >
-            <Image src={thumb} alt="" fill priority sizes="100vw" className="object-cover scale-110 blur-2xl" />
+            <Cover trim={cur.trimBorder} src={thumb} alt="" fill priority sizes="100vw" className="object-cover scale-110 blur-2xl" />
           </motion.div>
         )}
       </AnimatePresence>
@@ -76,7 +77,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
         aria-label={`Previous project: ${prev.title}`}
         className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[220px] h-[120px] z-10 opacity-80 hover:opacity-100 transition-opacity overflow-hidden bg-panel"
       >
-        {prevThumb && <Image src={prevThumb} alt="" fill sizes="220px" className="object-cover" />}
+        {prevThumb && <Cover trim={prev.trimBorder} src={prevThumb} alt="" fill sizes="220px" className="object-cover" />}
       </button>
       <button
         type="button"
@@ -84,7 +85,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
         aria-label={`Next project: ${next.title}`}
         className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[220px] h-[120px] z-10 opacity-80 hover:opacity-100 transition-opacity overflow-hidden bg-panel"
       >
-        {nextThumb && <Image src={nextThumb} alt="" fill sizes="220px" className="object-cover" />}
+        {nextThumb && <Cover trim={next.trimBorder} src={nextThumb} alt="" fill sizes="220px" className="object-cover" />}
       </button>
 
       {/* Title + frame */}
@@ -116,7 +117,7 @@ export default function Hero({ slides, index, onIndex, onOpen, tagline }: Props)
             <AnimatePresence mode="sync">
               {thumb && (
                 <motion.div key={cur.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="absolute inset-0">
-                  <Image src={thumb} alt="" fill sizes="(min-width: 768px) 540px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+                  <Cover trim={cur.trimBorder} src={thumb} alt="" fill sizes="(min-width: 768px) 540px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 </motion.div>
               )}
             </AnimatePresence>

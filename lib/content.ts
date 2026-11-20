@@ -32,6 +32,7 @@ export const getVideos = cache(async (): Promise<Video[]> => {
         title: p.title.name,
         url: p.url!,
         thumbnail: imagePath(p.thumbnail),
+        trimBorder: p.trimBorder || undefined,
         year: p.year ?? undefined,
         client: p.client || undefined,
         location: p.location || undefined,

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Cover from "@/components/Cover";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -29,7 +30,8 @@ export function ProjectTile({ v, n }: { v: Video; n?: number }) {
     <Link href={projectHref(v)} className="group text-left flex flex-col">
       <div className="relative aspect-video overflow-hidden bg-panel">
         {thumb ? (
-          <Image
+          <Cover
+            trim={v.trimBorder}
             src={thumb}
             alt=""
             fill
