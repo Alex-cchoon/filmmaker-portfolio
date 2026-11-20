@@ -112,13 +112,19 @@ projects:
       - Director
       - Creative
     description: A spot promoting Gurasu House, Singapore's premier lampworking studio. Shot in both Chiang Mai and Singapore.
-    stills: []
+    stills:
+      - gurasu-house/still-1.jpg
+      - gurasu-house/still-2.jpg
+      - gurasu-house/still-3.jpg
+      - gurasu-house/still-4.jpg
+      - gurasu-house/still-5.jpg
     stats: []
     awards: []
     slide:
       discriminant: false
     caseStudy:
       discriminant: false
+    thumbnail: gurasu-house/cover.jpg
   - title:
       name: WKWSCI Open House 2025
       slug: wkwsci-open-house-2025
