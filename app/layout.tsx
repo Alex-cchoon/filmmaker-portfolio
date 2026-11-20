@@ -1,37 +1,44 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
-const interTight = Inter_Tight({
+const serif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter-tight",
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const sans = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Ong Chee Choon — Filmmaker",
+  title: "Ong Chee Choon — Director / Producer",
   description:
-    "Freelance filmmaker and cinematographer. Commercial, wedding, documentary and narrative work.",
+    "Ong Chee Choon is a director and producer making documentaries, commercials and brand films — and shooting, editing and grading them himself.",
   openGraph: {
-    title: "Ong Chee Choon — Filmmaker",
-    description: "Freelance filmmaker and cinematographer.",
+    title: "Ong Chee Choon — Director / Producer",
+    description: "Documentaries, commercials and brand films. Directed, produced, shot, cut and graded.",
     type: "website",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={interTight.variable}>
-      <body className="bg-background text-foreground font-sans antialiased">
-        <Navbar />
-        {children}
-      </body>
+    <html lang="en" className={`${serif.variable} ${mono.variable} ${sans.variable}`}>
+      <body className="bg-ink text-cream font-sans antialiased">{children}</body>
     </html>
   );
 }
