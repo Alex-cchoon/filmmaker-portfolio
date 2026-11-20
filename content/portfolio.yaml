@@ -62,7 +62,12 @@ projects:
       - Producer
       - Creative
     description: A spot for Adidas' collaboration with NTU, announcing the release of new merchandise — the first-ever partnership between the brand and the institution.
-    stills: []
+    stills:
+      - adidas-ntu-ushop/still-1.jpg
+      - adidas-ntu-ushop/still-2.jpg
+      - adidas-ntu-ushop/still-3.jpg
+      - adidas-ntu-ushop/still-4.jpg
+      - adidas-ntu-ushop/still-5.jpg
     stats: []
     credits: []
     awards: []
@@ -70,6 +75,7 @@ projects:
       discriminant: false
     caseStudy:
       discriminant: false
+    thumbnail: adidas-ntu-ushop/cover.jpg
   - title:
       name: Boulder+
       slug: boulder-plus
