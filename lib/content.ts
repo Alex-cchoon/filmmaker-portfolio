@@ -6,6 +6,11 @@ import type { Category, Role, SiteInfo, Video } from "@/data/videos";
 
 const reader = createReader(process.cwd(), keystaticConfig);
 
+/** Images uploaded in the editor are stored under public/images/projects; the reader returns the bare file name. */
+const IMAGE_DIR = "/images/projects/";
+const imagePath = (src: string | null | undefined) =>
+  !src ? undefined : /^(https?:)?\//.test(src) ? src : IMAGE_DIR + src.replace(/^\/+/, "");
+
 const slugify = (s: string) =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") || "project";
 
@@ -26,7 +31,7 @@ export const getVideos = cache(async (): Promise<Video[]> => {
         slug,
         title: p.title.name,
         url: p.url!,
-        thumbnail: p.thumbnail || undefined,
+        thumbnail: imagePath(p.thumbnail),
         year: p.year ?? undefined,
         client: p.client || undefined,
         location: p.location || undefined,
@@ -35,7 +40,7 @@ export const getVideos = cache(async (): Promise<Video[]> => {
         roles: [...p.roles] as Role[],
         description: p.description || undefined,
         awards: p.awards.filter(Boolean),
-        stills: p.stills.filter((s): s is string => !!s),
+        stills: p.stills.map(imagePath).filter((s): s is string => !!s),
         stats: p.stats.filter((s) => s.value || s.label),
         credits: p.credits.filter((c) => c.role || c.name),
       };
