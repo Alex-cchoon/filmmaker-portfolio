@@ -33,7 +33,6 @@ projects:
     format: Scholar feature
     roles:
       - Director
-      - Creative
     description: A feature video following Tan Yu Wei, a Year 2 student at NTU's Lee Kong Chian School of Medicine and recipient of the Ong Hok Tien Scholarship. It traces his path from early academic setbacks to pursuing his dream of becoming a doctor, with the support of mentors, family, and donors.
     stills:
       - meet-yu-wei/still-1.jpg
@@ -153,7 +152,6 @@ projects:
     format: Mixed-media spot
     roles:
       - Director
-      - Producer
     description: A mixed-media spot for WKWSCI's 2025 Open House, built around the concept of blind boxes.
     stills: []
     stats: []
@@ -264,7 +262,6 @@ projects:
     format: Documentary
     roles:
       - Director
-      - DP
       - Editor
     description: A feature piece showcasing Kai Emmanuel, a magician from The Magic Bar — a hidden spot for top illusionists to perform to intimate groups.
     stills: []
@@ -284,8 +281,7 @@ projects:
     category: Corporate
     format: Explainer
     roles:
-      - DP
-      - Editor
+      - Producer
     description: ''
     stills: []
     stats: []
@@ -304,9 +300,8 @@ projects:
     category: Commercial
     format: Brand film
     roles:
+      - Director
       - Producer
-      - DP
-      - Editor
     description: ''
     stills: []
     stats: []
@@ -325,9 +320,8 @@ projects:
     category: Commercial
     format: Brand film
     roles:
+      - Director
       - Producer
-      - DP
-      - Editor
     description: ''
     stills: []
     stats: []
@@ -346,9 +340,8 @@ projects:
     category: Commercial
     format: Brand film
     roles:
+      - Director
       - Producer
-      - DP
-      - Editor
     description: ''
     stills: []
     stats: []
