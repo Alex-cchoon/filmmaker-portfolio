@@ -46,27 +46,6 @@ export type Video = {
 // TODO (Chee Choon): roles below are placeholders — confirm before going live.
 export const videos: Video[] = [
   {
-    id: "kranji-cats",
-    title: "Kranji Cats",
-    url: "https://www.youtube.com/watch?v=1istFJpTvTc",
-    year: 2024,
-    client: "Singapore Turf Club",
-    category: "Documentary",
-    format: "Short documentary",
-    roles: ["Director", "Producer", "DP", "Editor"],
-    description:
-      "A film raising awareness about the plight of the wild cats at the Singapore Turf Club as it prepares to end its operations.",
-    slide: { left: "Kranji", right: "Cats", label: "Awareness" },
-    caseStudy: {
-      quote: "The racecourse was closing. The cats weren’t going anywhere.",
-      brief:
-        "Raise awareness of the cats living at the Singapore Turf Club before its operations end — and give audiences a reason to care.",
-      approach:
-        "Quiet, observational filmmaking: shot at the cats’ eye level, in natural light, alongside the people who look after them.",
-      metrics: [],
-    },
-  },
-  {
     id: "unlimited-possibilities",
     title: "Unlimited Possibilities",
     url: "https://www.youtube.com/watch?v=Gg9e4npE7vQ",
