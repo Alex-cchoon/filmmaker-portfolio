@@ -153,7 +153,7 @@ export default function Work({ openId, onOpenCase, onWatch }: Props) {
       </AnimatePresence>
 
       <section className="px-6 md:px-8 pb-24">
-        <motion.div layout className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5 gap-y-12">
+        <motion.div layout className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,380px),1fr))] gap-x-5 gap-y-12">
           <AnimatePresence>
             {tiles.map(({ v, n }) => {
               const thumb = thumbnailFor(v);

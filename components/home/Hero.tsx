@@ -57,8 +57,10 @@ export default function Hero({ slides, index, onIndex, onOpen }: Props) {
 
       {/* Header */}
       <header className="absolute top-0 inset-x-0 z-20 flex flex-wrap items-start justify-between gap-6 px-6 md:px-8 py-6">
-        <a href="#top" className="font-serif italic text-[28px] leading-none">Ong Chee Choon</a>
-        <span className="hidden md:block text-xs tracking-[0.12em] pt-1.5">• DIRECTOR / PRODUCER</span>
+        <a href="#top" className="flex flex-col gap-1.5">
+          <span className="font-serif italic text-[28px] leading-none">Ong Chee Choon</span>
+          <span className="text-[11px] tracking-[0.12em]">• DIRECTOR / PRODUCER</span>
+        </a>
         <nav className="flex gap-8 md:gap-10 text-xs tracking-[0.1em] pt-1.5">
           <a href="#work">• WORK</a>
           <a href="#about">ABOUT</a>
